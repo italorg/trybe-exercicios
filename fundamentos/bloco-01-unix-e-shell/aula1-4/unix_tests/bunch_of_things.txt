@@ -1,0 +1,17 @@
+2
+5
+8
+0
+34
+1
+Internet
+Unix
+Bash
+Html
+Css
+Javascript
+SoftSkill
+HardSkill
+Bash
+Css
+HardSkill

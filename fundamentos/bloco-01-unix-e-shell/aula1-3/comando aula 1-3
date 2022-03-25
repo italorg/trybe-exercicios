@@ -1,0 +1,30 @@
+cd
+ls
+ls -a
+mkdir
+rmdir
+rm -rf
+rm
+mv
+cp
+cat
+less (Q sai)
+head
+head -5
+tail
+tail-5
+grep
+grep -i
+     -i ''
+     -iv
+     -in
+     -ic
+wc
+wc -w
+wc -l
+wc -c
+ls ?
+ls *
+man
+whatis
+apropos

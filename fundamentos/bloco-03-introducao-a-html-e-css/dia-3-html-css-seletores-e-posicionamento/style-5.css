@@ -1,0 +1,44 @@
+ol{
+    background-color: yellow;
+    
+}
+.ol-frases li:nth-child(2n){
+    color: green;
+}
+.ol-frases li:nth-child(2n+1){
+    text-transform: uppercase;
+}
+.header{
+    color: red;
+}
+.header em{
+    font-size: 40px;
+    border: 1px solid black
+}
+li {
+    font-size: 20px;
+}
+li em{
+    font-weight: bold;
+}
+.linguagens li:nth-child(-n+3){
+    color: blue;
+}
+.java{
+    background-color: pink;
+}
+.StackOverflow :hover{
+    background-color: orange;
+}
+.W3Schools :hover{
+    background-color: green;
+}
+.MDN :hover{
+    background-color: black;
+}
+.DevDocs :hover{
+    background-color: yellow;
+}
+.Trybe :hover{
+    background-color: green;
+}

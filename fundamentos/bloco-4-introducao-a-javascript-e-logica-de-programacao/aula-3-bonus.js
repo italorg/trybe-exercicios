@@ -71,7 +71,7 @@ for(let i = 1; i <= aux; i ++){
         linha += '*';
     }
     
-    for(let k = aux-i; k > 0 ; k --){
+    for(let km = aux-i; m > 0 ; m --){
         linha += ' ';
     }
     

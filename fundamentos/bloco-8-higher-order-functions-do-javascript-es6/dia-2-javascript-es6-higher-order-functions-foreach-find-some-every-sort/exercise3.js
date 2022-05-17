@@ -62,3 +62,9 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+function getNamedBook() {
+  const resultado = books.find((element) => element.name.length = 26);
+  return resultado;
+}
+console.log(getNamedBook());

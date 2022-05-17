@@ -61,4 +61,10 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+// Adicione o código do exercício aqui: points.sort((a, b) => a - b);
+
+function booksOrderedByReleaseYearDesc() {
+  books.sort((element1, element2) => element1.releaseYear - element2.releaseYear);
+}
+booksOrderedByReleaseYearDesc();
+console.log(books);

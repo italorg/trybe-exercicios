@@ -62,3 +62,9 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+function someBookWasReleaseOnThe80s() {
+  const result = books.some((element) => element.releaseYear < 1990 && element.releaseYear > 1979);
+  return result;
+}
+console.log(someBookWasReleaseOnThe80s());

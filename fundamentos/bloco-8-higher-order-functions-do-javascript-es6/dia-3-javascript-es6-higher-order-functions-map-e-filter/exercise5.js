@@ -62,3 +62,9 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+//Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
+
+function fantasyOrScienceFictionAuthors() {
+  return books.filter((element) => element.genre ==='Ficção Científica' || element.genre ==='Fantasia').map((element) => element.author.name).sort()
+}
+console.log(fantasyOrScienceFictionAuthors());

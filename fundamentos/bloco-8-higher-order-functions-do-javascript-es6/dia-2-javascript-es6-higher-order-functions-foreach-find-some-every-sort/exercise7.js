@@ -62,3 +62,19 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+function authorUnique() {
+  for (const index in books) {
+    for (const i in books) {
+      if ( index !== i) {
+        if (books[index].author.birthYear === books[i].author.birthYear) { 
+          //console.log(`${books[index].author.name} e ${books[i].author.name} nasceram no mesmo ano.`);
+          return false;
+        }
+      }
+    }
+  }
+  return true;
+}
+
+console.log(authorUnique());

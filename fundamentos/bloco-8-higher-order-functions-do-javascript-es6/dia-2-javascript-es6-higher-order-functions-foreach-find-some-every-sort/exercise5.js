@@ -62,3 +62,9 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+function everyoneWasBornOnSecXX() {
+  const result = books.every((element) => element.author.birthYear < 2000 && element.author.birthYear > 1899);
+  return result;
+}
+console.log(everyoneWasBornOnSecXX());

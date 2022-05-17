@@ -62,3 +62,9 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+//Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
+
+function oldBooks() {
+  return books.filter((element) => 2021 - element.releaseYear > 60).map((element) => element.name);
+}
+console.log(oldBooks());

@@ -64,6 +64,7 @@ const books = [
 // Adicione o código do exercício aqui:
 
 function authorUnique() {
+  
   for (const index in books) {
     for (const i in books) {
       if ( index !== i) {
@@ -75,6 +76,7 @@ function authorUnique() {
     }
   }
   return true;
+  
 }
 
 console.log(authorUnique());

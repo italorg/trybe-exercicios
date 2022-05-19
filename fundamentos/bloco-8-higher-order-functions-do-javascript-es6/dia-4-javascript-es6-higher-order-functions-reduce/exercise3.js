@@ -62,14 +62,12 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-// Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+// Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
 
-function authorWith3DotsOnName() {
- return books.filter((element) => element.author.name.match(/./g) === ['.','.','.']).map((element) => element.name)
+function averageAge(books) {
+  const soma = books.reduce((acc, cur) => {
+    return acc += cur.releaseYear - cur.author.birthYear;
+  }, 0);
+  return soma / books.length;
 }
-console.log(authorWith3DotsOnName());
-
-/*
-var str = 'Ser, ou não ser, eis a questão.';
-console.log(str.match(/,/g));
-*/
+console.log(averageAge(books));

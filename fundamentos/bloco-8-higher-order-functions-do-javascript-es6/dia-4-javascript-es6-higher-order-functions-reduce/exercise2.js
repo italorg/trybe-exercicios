@@ -62,14 +62,8 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-// Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+//Crie uma string com os nomes de todas as pessoas autoras.
 
-function authorWith3DotsOnName() {
- return books.filter((element) => element.author.name.match(/./g) === ['.','.','.']).map((element) => element.name)
-}
-console.log(authorWith3DotsOnName());
-
-/*
-var str = 'Ser, ou não ser, eis a questão.';
-console.log(str.match(/,/g));
-*/
+function reduceNames() {
+  return books.reduce((acc, cur, index, array) => (index === array.length - 1) ? acc + `${cur.author.name}.` : acc + `${cur.author.name}, `, '');}
+console.log(reduceNames());

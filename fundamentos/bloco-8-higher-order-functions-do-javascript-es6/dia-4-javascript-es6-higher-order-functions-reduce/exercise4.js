@@ -62,14 +62,9 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-// Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+// Encontre o livro com o maior nome.
 
-function authorWith3DotsOnName() {
- return books.filter((element) => element.author.name.match(/./g) === ['.','.','.']).map((element) => element.name)
+function longestNamedBook(books) {
+  return books.reduce((acc, cur) => (acc.name.length > cur.name.length) ? acc : cur);
 }
-console.log(authorWith3DotsOnName());
-
-/*
-var str = 'Ser, ou não ser, eis a questão.';
-console.log(str.match(/,/g));
-*/
+console.log(longestNamedBook(books));
